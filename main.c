@@ -33,7 +33,7 @@ double A8(int len, int* arr)
     return sqrt(sumOfPositives);
 }
 
-int M5(int len, int* arr, float a8)
+int M5(int len, int* arr, double a8)
 {
     int counter = 0;
     for (int i = 0; i < len; i++)
@@ -88,7 +88,7 @@ int main()
 
     if (m5x <= 2)
     {
-        int a10y = A10(yLength, Y);
+        double a10y = A10(yLength, Y);
         double a8y = A8(yLength, Y);
         int m5y = M5(yLength, Y, a8y);
         double a10x = A10(xlength, X);
@@ -100,7 +100,7 @@ int main()
 
     if (m5x > 2)
     {
-        int a10y = A10(yLength, Y);
+        double a10y = A10(yLength, Y);
 
         double z2 = 33.51 * sin(pow(a10y, 2));
         printf("\nZ2 = %f", z2);
